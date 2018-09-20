@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<title>GfyCat Name Generator</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row mt-4 justify-content-center">
+			<div class="col-">
+				<h1>Generate GfyCat names</h1>
+			</div>
+		</div>
+		<div class="row mt-4 justify-content-center">
+			<div class="col-">
+				<h4 id="generated_name">Loading Files</h4>
+			</div>
+		</div>
+		<div class="row mt-2 justify-content-center">
+			<div class="col-">
+				<button type="button" class="btn btn-primary" id="generate_button" disabled>Generate</button>
+			</div>
+		</div>
+		<div class="row mt-5 justify-content-center">
+			<div class="col-md-12">
+				<input type="text" class="form-control" id="custom_adjective_text" placeholder="Custom Comma Separated Adjective List"/>
+			</div>
+		</div>
+		<div class="row mt-2 justify-content-center">
+			<div class="col-md-12">
+				<input type="text" class="form-control" id="custom_animal_text" placeholder="Custom Comma Separated Animal List"/>
+			</div>
+		</div>
+		<div class="row mt-2 justify-content-left">
+			<div class="col-md-12">
+				<select class="selectpicker" id="animal_order">
+					<option value=0>Animal First</option>
+					<option value=1>Animal Second</option>
+					<option value=2 selected>Animal Third</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="gfycat_name_generator.js"></script>
+</body>
+</html>
